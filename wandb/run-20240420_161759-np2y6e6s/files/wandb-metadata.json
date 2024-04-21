@@ -1,0 +1,128 @@
+{
+    "os": "Linux-6.5.0-28-generic-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2024-04-20T16:18:00.028639",
+    "startedAt": "2024-04-20T16:17:59.253680",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ClassLongJoe1112/Car-Racing.git",
+        "commit": null
+    },
+    "email": null,
+    "root": "/workspace",
+    "host": "lch-legion5",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2099.80425,
+        "min": 1400.0,
+        "max": 2900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1874.753,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1836.465,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2719.644,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2843.885,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1842.048,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1400.0,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1868.603,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1862.753,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1615.837,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2342.325,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1528.897,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1687.821,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 4228.861,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 4188.778,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2316.047,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 4173.269,
+            "min": 1400.0,
+            "max": 2900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 411.36231231689453,
+            "used": 255.33684921264648
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2060",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.479564666748047
+    }
+}

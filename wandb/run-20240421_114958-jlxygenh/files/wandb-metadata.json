@@ -1,0 +1,120 @@
+{
+    "os": "Linux-6.5.0-28-generic-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2024-04-21T11:49:59.468028",
+    "startedAt": "2024-04-21T11:49:58.360478",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ClassLongJoe1112/Car-Racing.git",
+        "commit": null
+    },
+    "email": null,
+    "root": "/workspace",
+    "host": "lch-legion5",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2680.411625,
+        "min": 1400.0,
+        "max": 2900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1400.0,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1756.444,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 3148.28,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2913.75,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1762.667,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1517.494,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1495.418,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1662.907,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1902.376,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1906.953,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2607.188,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2233.723,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1906.338,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 1907.446,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 4274.076,
+            "min": 1400.0,
+            "max": 2900.0
+        },
+        {
+            "current": 4279.649,
+            "min": 1400.0,
+            "max": 2900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 411.36231231689453,
+            "used": 255.5055389404297
+        }
+    },
+    "memory": {
+        "total": 15.479560852050781
+    }
+}
