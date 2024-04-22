@@ -9,11 +9,11 @@ from test import Agent
 
 LOG_FREQ = 100
 
-n_episode = 2000
+n_episode = 1000
 
 if __name__ == '__main__':
 
-    wandb.init(project="car-racing")#, mode="disabled")
+    wandb.init(project="car-racing", mode="disabled")
 
     # declare the environment
     env = gym.make("MultiCarRacing-v0", num_agents=1, direction='CCW',
