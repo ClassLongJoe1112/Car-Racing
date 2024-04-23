@@ -9,11 +9,11 @@ from test import Agent
 
 LOG_FREQ = 100
 
-n_episode = 1000
+n_episode = 1500
 
 if __name__ == '__main__':
 
-    wandb.init(project="car-racing", mode="disabled")
+    wandb.init(project="car-racing")#, mode="disabled")
 
     # declare the environment
     env = gym.make("MultiCarRacing-v0", num_agents=1, direction='CCW',
@@ -24,6 +24,7 @@ if __name__ == '__main__':
     agent = Agent()
     agent.policy.train()
     agent.init_target_model()
+    agent.load_cont_train("car_racing_pi_yuzh.pt", "car_racing_q_yuzh.pt")
     wandb.watch(agent.critic, log_freq=LOG_FREQ)
     
     # For transition storing (temp = last 4 frames = "current state" in a trans)
@@ -34,7 +35,7 @@ if __name__ == '__main__':
 
     # For reward curve checking
     reward_per_5epi = 0
-
+    max_reward = 0
     for episode in (range(n_episode)):
 
         obs = env.reset()
@@ -103,13 +104,17 @@ if __name__ == '__main__':
         if episode % 5 == 0:
             wandb.log({"score per 5 epi": reward_per_5epi / 5})
             reward_per_5epi = 0
-            
+        
         if episode % n_episode/3 == 0:
             print("saved checkpoint!")
-            agent.save("car_racing.pt")
+            agent.save("car_racing_pi_half.pt", "car_racing_q_half.pt")
 
+        if reward_per_episode > max_reward:
+            max_reward = reward_per_episode
+            print("new record!")
+            agent.save("car_racing_pi_max_half.pt", "car_racing_q_max_half.pt")
     # Save the trained model
-    agent.save("car_racing.pt")
+    agent.save("car_racing_pi_half.pt", "car_racing_q_half.pt")
 
     env.close()
     # print("individual scores:", total_reward)
